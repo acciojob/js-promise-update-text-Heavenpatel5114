@@ -1,5 +1,6 @@
+
 function sayHello(){
-	return new promisie((resolve) =>{
+	return new promisie((resolve) => {
 		setTimeout(()=>{
 			resolve("Hello, world!");
 		},1000);
