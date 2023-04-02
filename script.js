@@ -1,6 +1,6 @@
 
 function sayHello(){
-	return new promisie((resolve) => {
+	return new promise((resolve) => {
 		setTimeout(()=>{
 			resolve("Hello, world!");
 		},1000);
