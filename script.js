@@ -1,13 +1,11 @@
-
-function sayHello(){
-	return new promise((resolve) => {
-		setTimeout(()=>{
-			resolve("Hello, world!");
-		},1000);
-	});
+function helloworld(){
+	setTimeout((resolve,reject)=>{
+		reslove("Hello, world!")
+	},1000)
 }
-
-const output =document.getElementbyId("output");
-sayHello().then((result)=>{
-	output.textContent=result;
+const ouputElemnt=document.getElementById('output')
+helloworld().then((message)=>{
+	ouputElemnt.innerText=message;
+}).catch((error) => {
+  console.error(error);
 });
